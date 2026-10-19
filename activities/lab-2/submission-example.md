@@ -1,24 +1,33 @@
-# Lab 2 Submission (EXAMPLE)
+# Lab 2 Submission 
 
-*Note: This is an example of what your submission should look like. Do not copy these fake answers.*
+
 
 ## Instance Tracking
 **First Instance**
-- Instance ID: i-0abc123fake456789
-- Availability Zone: ap-southeast-1a
+- Instance ID: i-00a89e4544b8f652f
+- Availability Zone: ap-southeast-1b
 
 **Second Instance**
-- Instance ID: i-0def987fake654321
+- Instance ID: i-00a89e4544b8f652f
 - Availability Zone: ap-southeast-1b
 
 ## Questions
 1. Why did the group stop at 2 instances?
-   (Example answer): Because we configured the maximum capacity limit to X, preventing the Auto Scaling group from scaling beyond that number.
+
+The Auto Scaling Group stopped at two instances because its maximum capacity was configured to 2. This limit prevents the group from launching additional instances beyond the specified maximum, even when CPU utilization remains high.
+
 2. Why did terminating an instance by hand not remove the cost?
-   (Example answer): Because the service automatically attempts to maintain the minimum capacity, so it replaced the deleted instance with a fresh one.
+
+Terminating an instance manually did not permanently reduce the group's capacity because Auto Scaling automatically launched a replacement to maintain the desired capacity and satisfy the minimum capacity requirement. The replacement instance could continue incurring charges.
+
 3. Why is the target value 40 percent and not 90 percent?
-   (Example answer): If the target was 90 percent, the server might crash from overload before the new replacement instance finishes booting up and passing health checks.
+
+A 40% CPU utilization target allows the Auto Scaling Group to respond to increasing workloads before the existing instance becomes overloaded. A 90% target could allow CPU utilization to remain very high while a new instance launches and initializes, potentially causing slow response times or service interruptions.
+
 4. What did the automatic cutoff protect us from?
-   (Example answer): It protected the AWS account from accumulating unexpected charges if we forgot to clean up the running resources after class.
+
+The automatic cutoff helped prevent unexpected AWS charges by stopping or limiting the lab's resources after the allotted period. It reduced the risk of leaving instances and other resources running accidentally after the lab session.
+
 5. What changes when a load balancer sits in front of the group?
-   (Example answer): A load balancer provides a single entry point (DNS name), so users wouldn't have to manually type the IP addresses of the individual instances to reach the application.
+
+A load balancer provides a single entry point for users and distributes incoming requests among healthy instances in the Auto Scaling Group. Users can access the application through the load balancer's DNS name instead of manually choosing individual insta
