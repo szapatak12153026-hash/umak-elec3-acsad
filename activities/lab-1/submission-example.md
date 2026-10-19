@@ -11,6 +11,10 @@
 ![Part B Error](example-part-b-error.png)
 
 ## Part C
+
+  "Action": "ec2:RunInstances",
+  "Resource": "acsad-g08-web",
+  "ec2:InstanceType": "t3.micro"
 <img width="786" height="437" alt="5a196622-c70d-4e1c-a8d9-68daf1df6687" src="https://github.com/user-attachments/assets/b18f8775-902c-4e8a-8198-53dc258c384d" /><img width="781" height="437" alt="02f8dce3-fbaf-4337-ac78-49593f10b81a" src="https://github.com/user-attachments/assets/1994c294-1242-42d4-b504-2c16b1eb55f8" />
 <img width="778" height="348" alt="cee16cea-5aa2-4d9b-ad21-1581151a899d" src="https://github.com/user-attachments/assets/6721870f-2a0c-47e1-945e-c00233526b1e" />
 <img width="782" height="337" alt="a5691d77-e091-493b-8fa9-fa8f06b9afea" src="https://github.com/user-attachments/assets/86944e2f-85ce-46fd-816d-31c54fc1412f" />
