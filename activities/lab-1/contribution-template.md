@@ -2,6 +2,6 @@
 
 | Lab Section | Driver | Navigator | Recorder | Reviewer |
 |---|---|---|---|---|
-| Part A & B | | | | |
-| Part C | | | | |
-| Part D & E | | | | |
+| Part A & B |Zapata | Barro| canlas|Zapata |
+| Part C | Barro|Canslas |Zapata |Barro |
+| Part D & E |Canlas |Zapata |Barro |Canlas |
